@@ -32,7 +32,7 @@ class WordController {
     }
 }
 
-class ResponseMessage(val message: String,var resMessage : String? = "Default Message")
+class ResponseMessage(var message: String = "Default Message",var resMessage : String? = "Default Message")
 
 
 data class RequestMessage @JsonCreator constructor(
