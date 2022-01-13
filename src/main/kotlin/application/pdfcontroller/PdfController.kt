@@ -3,7 +3,6 @@ package application.pdfcontroller
 import application.FileResourceUtilK
 import application.RequestMessage
 import application.ResponseMessage
-import application.pojo.Order
 import org.springframework.core.io.ClassPathResource
 import org.springframework.core.io.Resource
 import org.springframework.web.bind.annotation.RequestBody
