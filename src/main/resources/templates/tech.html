@@ -343,57 +343,57 @@
            <span th:text="${tech.date}"></span>даги   <span th:text="${tech.number}"></span>-сонли  сўровингизга   жавобан  техника
            воситалари   ҳақидаги   маълумотлар   тақдим   етилмоқда:</p>
         </div>
-<!--              <table class="part721" style="">-->
-<!--                <thead>-->
+              <table class="part721" style="">
+                <thead>
+                    <tr>
+                        <th rowspan="2" style="white-space: nowrap;text-align: center;">Т/р</th>
+                        <th rowspan="2" style="text-align: center;">СТИР/ЖШШИР</th>
+                        <th rowspan="2" style="text-align: center;">Юридик шахс исми/Жисмоний шахснинг исми, фамилияси, отасининг исми</th>
+                        <th rowspan="2" style="text-align: center;">Рўйхатга олиш маркази номи</th>
+                        <th rowspan="2" style="text-align: center;">Тури</th>
+                        <th rowspan="2" style="text-align: center;">Русуми</th>
+                        <th rowspan="2" style="text-align: center;">Ранги</th>
+                        <th rowspan="2" style="text-align: center;">Давлат рақами</th>
+                        <th rowspan="2" style="text-align: center;">Ишлаб чиқарилган йили</th>
+                        <th colspan="2" style="text-align: center;">Сана</th>
+                    </tr>
+                    <tr>
+                        <th style="text-align: center;">рўйхатга олинган</th>
+                        <th style="text-align: center;">рўйхатдан чиқарилган</th>
+                    </tr>
+                </thead>
+                <tbody>
 <!--                    <tr>-->
-<!--                        <th rowspan="2" style="white-space: nowrap;text-align: center;">Т/р</th>-->
-<!--                        <th rowspan="2" style="text-align: center;">СТИР/ЖШШИР</th>-->
-<!--                        <th rowspan="2" style="text-align: center;">Юридик шахс исми/Жисмоний шахснинг исми, фамилияси, отасининг исми</th>-->
-<!--                        <th rowspan="2" style="text-align: center;">Рўйхатга олиш маркази номи</th>-->
-<!--                        <th rowspan="2" style="text-align: center;">Тури</th>-->
-<!--                        <th rowspan="2" style="text-align: center;">Русуми</th>-->
-<!--                        <th rowspan="2" style="text-align: center;">Ранги</th>-->
-<!--                        <th rowspan="2" style="text-align: center;">Давлат рақами</th>-->
-<!--                        <th rowspan="2" style="text-align: center;">Ишлаб чиқарилган йили</th>-->
-<!--                        <th colspan="2" style="text-align: center;">Сана</th>-->
+<!--                        <td style="text-align:center;">1</td>-->
+<!--                        <td></td>-->
+<!--                        <td></td>-->
+<!--                        <td></td>-->
+<!--                        <td></td>-->
+<!--                        <td></td>-->
+<!--                        <td></td>-->
+<!--                        <td></td>-->
+<!--                        <td></td>-->
+<!--                        <td></td>-->
+<!--                        <td></td>-->
 <!--                    </tr>-->
-<!--                    <tr>-->
-<!--                        <th style="text-align: center;">рўйхатга олинган</th>-->
-<!--                        <th style="text-align: center;">рўйхатдан чиқарилган</th>-->
-<!--                    </tr>-->
-<!--                </thead>-->
-<!--                <tbody>-->
-<!--&lt;!&ndash;                    <tr>&ndash;&gt;-->
-<!--&lt;!&ndash;                        <td style="text-align:center;">1</td>&ndash;&gt;-->
-<!--&lt;!&ndash;                        <td></td>&ndash;&gt;-->
-<!--&lt;!&ndash;                        <td></td>&ndash;&gt;-->
-<!--&lt;!&ndash;                        <td></td>&ndash;&gt;-->
-<!--&lt;!&ndash;                        <td></td>&ndash;&gt;-->
-<!--&lt;!&ndash;                        <td></td>&ndash;&gt;-->
-<!--&lt;!&ndash;                        <td></td>&ndash;&gt;-->
-<!--&lt;!&ndash;                        <td></td>&ndash;&gt;-->
-<!--&lt;!&ndash;                        <td></td>&ndash;&gt;-->
-<!--&lt;!&ndash;                        <td></td>&ndash;&gt;-->
-<!--&lt;!&ndash;                        <td></td>&ndash;&gt;-->
-<!--&lt;!&ndash;                    </tr>&ndash;&gt;-->
-<!--&lt;!&ndash;                    <div th:if="${s > 4}">&ndash;&gt;-->
-<!--                        <tr th:each="item,iterStat : ${tech.data}" th:if="${iterStat.index < 2}">-->
-<!--                            <td th:text="${iterStat.index+1}" style="text-align: center;"></td>-->
-<!--                            <td th:text="${item.tin}" style="text-align: center;"></td>-->
-<!--                            <td th:text="${item.name}" style="text-align: center;"></td>-->
-<!--                            <td style="text-align: center;"></td>-->
-<!--                            <td style="text-align: center;"></td>-->
-<!--                            <td th:text="${item.technic_model}" style="text-align: center;"></td>-->
-<!--                            <td th:text="${item.technic_color}" style="text-align: center;"></td>-->
-<!--                            <td th:text="${item.gos_numb}" style="text-align: center;"></td>-->
-<!--                            <td th:text="${item.made_year}" style="text-align: center;"></td>-->
-<!--                            <td th:text="${item.reg_date}" style="text-align: center;"></td>-->
-<!--                            <td style="text-align: center;"></td>-->
-<!--                        </tr>-->
-<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--                    <div th:if="${s > 4}">-->
+                        <tr th:each="item,iterStat : ${tech.data}" th:if="${iterStat.index < 2}">
+                            <td th:text="${iterStat.index+1}" style="text-align: center;"></td>
+                            <td th:text="${item.tin}" style="text-align: center;"></td>
+                            <td th:text="${item.name}" style="text-align: center;"></td>
+                            <td style="text-align: center;"></td>
+                            <td style="text-align: center;"></td>
+                            <td th:text="${item.technic_model}" style="text-align: center;"></td>
+                            <td th:text="${item.technic_color}" style="text-align: center;"></td>
+                            <td th:text="${item.gos_numb}" style="text-align: center;"></td>
+                            <td th:text="${item.made_year}" style="text-align: center;"></td>
+                            <td th:text="${item.reg_date}" style="text-align: center;"></td>
+                            <td style="text-align: center;"></td>
+                        </tr>
+<!--                    </div>-->
 
-<!--                </tbody>-->
-<!--            </table>-->
+                </tbody>
+            </table>
         </div>
     </div>
 
@@ -405,7 +405,7 @@
     </div>
 </div>
 </section>
-<section class="sheet landscape-page padding-standart" th:if="${s} > 0">
+<section class="sheet landscape-page padding-standart" th:if="${s} > 2">
     <div class="content">
         <table class="part721" style="">
             <thead>
@@ -427,7 +427,7 @@
             </tr>
             </thead>
             <tbody>
-            <tr th:each="item,iterStat : ${tech.data}" th:if="${iterStat.index+1 > 0}">
+            <tr th:each="item,iterStat : ${tech.data}" th:if="${iterStat.index+1 > 2}">
                 <td th:text="${iterStat.index+1}" style="text-align: center;"></td>
                 <td th:text="${item.tin}" style="text-align: center;"></td>
                 <td th:text="${item.name}" style="text-align: center;"></td>
