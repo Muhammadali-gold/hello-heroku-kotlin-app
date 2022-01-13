@@ -1230,9 +1230,9 @@ Content-Type: application/json
 
 
 
-POST http://195.158.30.178/application
+#POST http://195.158.30.178/application
 #POST https://hello-kotlin-project.herokuapp.com/order/dsi/withqrcode/base64/v2
-#POST localhost:8080/order/dsi/withqrcode/base64/v2
+POST localhost:8080/order/dsi/withqrcode/base64/v2
 Content-Type: application/json
 
 {
